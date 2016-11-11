@@ -29,3 +29,9 @@ RUN grails dependency-report
 
 # Set Default Behavior
 ENTRYPOINT ["/bin/bash"]
+
+# install vim
+RUN apt-get update && apt-get install -y vim 
+
+# put /usr/lib/jvm/grails/bin/ to path
+RUN echo 'export PATH=/usr/lib/jvm/grails/bin/:$PATH'  >> /root/.bashrc
