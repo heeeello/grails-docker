@@ -1,5 +1,5 @@
 FROM java:8
-MAINTAINER Manuel Ortiz Bey <ortiz.manuel@mozartanalytics.com>
+MAINTAINER jim.mei@centling.com
 
 # Set customizable env vars defaults.
 # Set Grails version (default: 3.1.1; min: 3.0.0; max: 3.1.6).
