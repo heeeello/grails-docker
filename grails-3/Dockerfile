@@ -2,8 +2,7 @@ FROM java:8
 MAINTAINER jim.mei@centling.com
 
 # Set customizable env vars defaults.
-# Set Grails version (default: 3.1.1; min: 3.0.0; max: 3.1.6).
-ENV GRAILS_VERSION 3.2.3
+ENV GRAILS_VERSION 3.2.6
 
 # Install Grails
 WORKDIR /usr/lib/jvm
