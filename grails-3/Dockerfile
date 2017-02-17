@@ -29,8 +29,9 @@ RUN grails dependency-report
 # Set Default Behavior
 ENTRYPOINT ["/bin/bash"]
 
-# install vim
-RUN apt-get update && apt-get install -y vim 
+# install vim for easy editing
+# install ifconfig, ping(with option -I) because I want to set up sshvpn(https://github.com/heeeello/code_snippets/tree/master/bash/ssh_tun_vpn)
+RUN apt-get update && apt-get install -y vim net-tools iputils-ping
 
 # put /usr/lib/jvm/grails/bin/ to path
 RUN echo 'export PATH=/usr/lib/jvm/grails/bin/:$PATH'  >> /root/.bashrc
