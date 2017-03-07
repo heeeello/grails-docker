@@ -27,7 +27,7 @@ RUN grails create-app --inplace --profile rest-api
 RUN grails dependency-report
 
 # Set Default Behavior
-ENTRYPOINT ["/bin/bash"]
+# ENTRYPOINT ["/bin/bash"]
 
 # install vim for easy editing
 # install ifconfig, ping(with option -I) because I want to set up sshvpn(https://github.com/heeeello/code_snippets/tree/master/bash/ssh_tun_vpn)
